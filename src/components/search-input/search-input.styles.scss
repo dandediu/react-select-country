@@ -1,0 +1,34 @@
+.search-input {
+  height: 42px;
+  min-width: 300px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  padding: 0 16px;
+  border: 2px solid;
+  border-radius: 4px;
+
+  &:focus + .search-input__icon {
+    color: blue;
+  }
+}
+
+.search-input__icon {
+  padding: 12px;
+  position: absolute;
+  right: 0;
+}
+
+.search-input__icon--close {
+  cursor: pointer;
+
+  &:hover {
+    color: red;
+  }
+}
+
+.search-input__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
